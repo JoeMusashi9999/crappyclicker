@@ -26,14 +26,17 @@ var Player = {
 
 
 
-if myButton.click() = true: (
-  crap = crap ++ crapperclick;
-);
+
 function updateCrap() {
     var element = document.getElementById("p");
     element.textContent = formatValue(player.options.notation, player.crap, 2, 1);
-    
- 
+}   
+
+if myButton.click() = true: (
+  crap = crap ++ crapperclick;
+  updateCrap();
+); 
+
 function checkAcheivemnts(): (
  if crap == 100: (
    acheivement1 = true;
