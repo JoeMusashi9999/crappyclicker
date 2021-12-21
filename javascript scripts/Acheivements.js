@@ -2,24 +2,22 @@
 
   
 //acheivement setting
-var acheivement1 = false;
-var acheivement2 = false;
-var acheivement3 = false;
-var acheivement4 = false;
-var acheivement5 = false;
-var acheivement6 = false;
-var acheivement7 = false;
-var acheivement8 = false;
-var acheivement9 = false;
 
-    
-
-
-
-
-var crap = 0;
-var crapperclick = 1;
-var crappersec = 0;
+var Player = {
+  
+  acheivement1: new boolean(false);
+  acheivement2: new boolean(false);
+  acheivement3: new boolean(false);
+  acheivement4: new boolean(false);
+  acheivement5: new boolean(false);
+  acheivement6: new boolean(false);
+  acheivement7: new boolean(false);
+  acheivement8: new boolean(false);
+  acheivement9: new boolean(false);
+  crap: 0;
+  crapperclick: 1;
+  crappersec: 0;
+}
 if myButton.click() = true: (
   crap = crap ++ crapperclick;
 );
