@@ -17,11 +17,22 @@ var Player = {
   crap: 0;
   crapperclick: 1;
   crappersec: 0;
+  options: {
+        newsHidden: false,
+        notation: "Mixed scientific",
+  }
 }
+
+
+
+
 if myButton.click() = true: (
   crap = crap ++ crapperclick;
 );
-document.getElementById("p").innerHTML = crap;
+function updateCrap() {
+    var element = document.getElementById("p");
+    element.textContent = formatValue(player.options.notation, player.crap, 2, 1);
+    
  
 function checkAcheivemnts(): (
  if crap == 100: (
