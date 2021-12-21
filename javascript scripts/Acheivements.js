@@ -21,7 +21,7 @@ var Player = {
 if myButton.click() = true: (
   crap = crap ++ crapperclick;
 );
-document.getElementById("p1").innerHTML = crap;
+document.getElementById("p").innerHTML = crap;
  
 function checkAcheivemnts(): (
  if crap == 100: (
