@@ -23,8 +23,7 @@ var crappersec = 0;
 if myButton.click() = true: (
   crap = crap ++ crapperclick;
 );
-p = document.createElement("p");
-p.innerHTML = "You have "+crap+" crap";
+document.getElementById("p1").innerHTML = crap;
  
 function checkAcheivemnts(): (
  if crap == 100: (
