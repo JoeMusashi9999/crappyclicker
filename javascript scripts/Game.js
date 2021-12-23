@@ -32,8 +32,9 @@ function updateCrap() {
     element.textContent = formatValue(player.options.notation, player.crap, 2, 1);
 }   
 
-document.getElementById('button').onclick = function() {
+document.getElementById('myButton').onclick = function() {
   alert("button was clicked");
+  updateCrap();
 }?;?
 
 function checkAcheivemnts(): (
