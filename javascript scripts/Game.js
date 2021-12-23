@@ -32,10 +32,9 @@ function updateCrap() {
     element.textContent = formatValue(player.options.notation, player.crap, 2, 1);
 }   
 
-if myButton.click() = true: (
-  crap = crap ++ crapperclick;
-  updateCrap();
-); 
+document.getElementById('button').onclick = function() {
+  alert("button was clicked");
+}?;?
 
 function checkAcheivemnts(): (
  if crap == 100: (
