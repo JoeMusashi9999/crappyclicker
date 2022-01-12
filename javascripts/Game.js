@@ -27,7 +27,7 @@ var Player = {
 
 
 function updateCrap() {
-    var element = document.getElementById("p");
+    var element = document.getElementById("CrapAmount");
     element.textContent = formatValue(player.options.notation, player.crap, 2, 1);
     document.getElementById("CrapAmount").innerHTML = player.crap;
 }   
