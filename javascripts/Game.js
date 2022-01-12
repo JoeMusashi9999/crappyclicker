@@ -26,16 +26,12 @@ var Player = {
 
 
 
-
 function updateCrap() {
     var element = document.getElementById("p");
     element.textContent = formatValue(player.options.notation, player.crap, 2, 1);
+    document.getElementById("CrapAmount").innerHTML = player.crap;
 }   
 
-document.getElementById('myButton').onclick = function() {
-  alert("button was clicked");
-  updateCrap();
-}?;?
 
 function checkAcheivemnts(): (
  if crap == 100: (
