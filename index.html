@@ -2,24 +2,19 @@
 
 
 <html>
+  <div id = "DIV">
   <image id:"Startup" src="images/Startup.jpg">
+    </div>
   <script>
-  function start(){
+    function wait(waitsecs) {
+      setTimeout(donothing(), 'waitsecs');
+  }
 
-window.timerID =  setInterval(function() {
-var aOpaque = document.getElementById('Startup').style.opacity;
-aOpaque = aOpaque-.1;
-
-aOpaque = aOpaque.toFixed(1);   
-
-document.getElementById('Startup').style.opacity = aOpaque;
-
-if(document.getElementById('Startup').style.opacity<=0)
-clearInterval(window.timerID);
-},1000);
-}
-
-window.onload = function(){start();} 
+  function donothing() {
+      //
+  } 
+    var div = document.getElementById('DIV');
+    div.parentNode.removeChild(div);
   </script>
   <head>
     <body>
