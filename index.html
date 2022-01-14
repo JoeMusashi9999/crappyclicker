@@ -2,6 +2,25 @@
 
 
 <html>
+  <image id:"Startup" src="Startup.jpg">
+  <script>
+  function start(){
+
+window.timerID =  setInterval(function() {
+var aOpaque = document.getElementById('Startup').style.opacity;
+aOpaque = aOpaque-.1;
+
+aOpaque = aOpaque.toFixed(1);   
+
+document.getElementById('Startup').style.opacity = aOpaque;
+
+if(document.getElementById('Startup').style.opacity<=0)
+clearInterval(window.timerID);
+},1000);
+}
+
+window.onload = function(){start();} 
+  </script>
   <head>
     <body>
       <div>
