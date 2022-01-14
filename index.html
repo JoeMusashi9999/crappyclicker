@@ -6,16 +6,9 @@
   <image id:"Startup" src="images/Startup.jpg">
     </div>
   <script>
-    function wait(waitsecs) {
-      setTimeout(donothing(), 'waitsecs');
-  }
-
-  function donothing() {
-      //
-  } 
     var div = document.getElementById('DIV');
-    wait(5)
-    div.remove();
+    setTimeout(function() {div.remove();},500)
+    
   </script>
   <head>
     <body>
