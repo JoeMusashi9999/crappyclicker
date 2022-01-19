@@ -3,7 +3,12 @@
 
 <html>
   <div id = "DIV">
-  <image id:"Startup" src="images/loading.gif" width="100%">
+    <style>
+          body {
+            background-image: src="images/loading.gif"
+            
+          }
+      </style>
     </div>
   <script>
     var div = document.getElementById('DIV');
@@ -23,14 +28,8 @@
         <p>You have <span id="CrapAmount" style="font-size:25px; color: black">0</span> Crap.</p>
         
       </div>
-      <div>
-        <style>
-          body {
-            background-image: src="images/ECBD7618-8F09-43E9-93D9-45663B38DA30.jpg"
-            
-          }
-        </div>
-        </style>
+      
+        
         
         
 
@@ -90,11 +89,12 @@
         <input type="submit" value="enter">
     </div>
     <script>
-      var div = document.getElementById('DIV1');
-      document.getElementById(DIV1).style.visibility = "hidden";
+      var div2 = document.getElementById('DIV2');
+      div2.style.visibility = "hidden";
 
     setTimeout(function() {
-      document.getElementById(DIV1).style.visibility = "visible";
+      div2.style.visibility = "visible";
+      
     },8000)
     </script>
   
