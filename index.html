@@ -10,8 +10,9 @@
     setTimeout(function() {
       div.remove();
     },8000)
-    
+  
   </script>
+  <div id = "DIV2">
   <head>
     <body>
       <div>
@@ -87,7 +88,15 @@
         <br>
         <br>
         <input type="submit" value="enter">
+    </div>
+    <script>
+      var div = document.getElementById('DIV1');
+      document.getElementById(DIV1).style.visibility = "hidden";
 
+    setTimeout(function() {
+      document.getElementById(DIV1).style.visibility = "visible";
+    },8000)
+    </script>
   
 <script type="text/javascript" src="Game.js"></script>
 </html>
