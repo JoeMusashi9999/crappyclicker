@@ -42,4 +42,4 @@ function checkAcheivemnts() {
     window.print("you got the acheivement 100 crap!");
   }
   
-setInterval(checkAcheivemnts, 100);
+
