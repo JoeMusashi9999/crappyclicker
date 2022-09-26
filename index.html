@@ -1,99 +1,42 @@
-<!DOCTYPE html>
-
-
+<!doctype html>
+<html lang="en">
 <html>
-  <div id = "DIV">
-    <style>
-          <img src='images/CrappyClickerLoad.jpg'>
-      </style>
-    </div>
-  <script>
-    var div = document.getElementById('DIV');
-    setTimeout(function() {
-      div.remove();
-    },8000)
-  
-  </script>
-  <div id = "DIV2">
-  <head>
-    <body>
-      <div>
-        <title>Crappy Clicker</title>
-        <h1>Crappy Clicker:</h1>
-        <h2>A game about collecting crap, like your twice removed uncle does!</h2>
-        <button type="button" onclick="updateCrap()">>Click me for crap!</button>
-        <p>You have <span id="CrapAmount" style="font-size:25px; color: black">0</span> Crap.</p>
-        
-      </div>
-      
-        
-        
-        
+    <head>
+        <meta charset="utf-8">
 
-        
-      </body>
+        <title>Crappy Clicker Example</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
     </head>
-  
-  
 
-  
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-        <label> Codes: </label>
-        <input type="text" name="name" value="">
-        <br>
-        <br>
-        <input type="submit" value="enter">
-    </div>
-    <script>
-      var div2 = document.getElementById('DIV2');
-      div2.style.visibility = "hidden";
+    <body>
 
-    setTimeout(function() {
-      div2.style.visibility = "visible";
-      
-    },8000)
-    </script>
-  
-<script src='javascripts/Game.js'></script>
+        <h1>Welcome to Crappy clicker!</h1>
+        <h2>By Joe Musashi</h2>
+        <p>Welcome to the wonderous world of Crappy Clicker where you click to accumulate more crap. Like your uncle!</p>
+        <p>You have <span id="CrapAmount" style="font-size:18px; color: black">0</span> Crap.</p>
+        <button id="button" onclick="updateCrap()">>Click me for crap!</button>
+        
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+    <head>
+        <style>
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/
+            height: 40px;
+            background: grey;
+        }
+        </style>
+    </head>
+    <div id="footer">Crappy clicker, a game about collecting crap by the mysterous Joe Musashi /n contact him at joemusashi9999@gmail.com. Support is welcome at github:https://github.com/JoeMusashi9999/crappyclicker/</div>
 </html>
