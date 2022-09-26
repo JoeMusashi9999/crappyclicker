@@ -27,15 +27,15 @@ var Player = {
 
 //update crap not working
 function updateCrap() {
-  document.getElementById("CrapAmount").textContent=(String(Player.crap+=1));
-
-
+  document.getElementById("CrapAmount").textContent=(String(Player.crap+=Player.crapperclick));
 }   
-
-
+function upgradeClicker() {
+  Player.crapperclick +=1
+}
 function checkAcheivemnts() {
-  if (Player.crap == 100) {
-    acheivement1 = true;
+  if (Player.crap == 100 && Player.acheivement1 == false) {
+    Player.acheivement1 = true;
     window.print("you got the acheivement 100 crap!");
   }
 }
+setInterval(checkAcheivemnts, 100);
