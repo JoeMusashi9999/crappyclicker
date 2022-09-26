@@ -17,6 +17,7 @@ var Player = {
   crap: 0,
   crapperclick: 1,
   crappersec: 0,
+  crapUpgrade: 10
   options: {
         newsHidden: false,
         notation: "Mixed scientific",
@@ -30,12 +31,15 @@ function updateCrap() {
   document.getElementById("CrapAmount").textContent=(String(Player.crap+=Player.crapperclick));
 }   
 function upgradeClicker() {
-  Player.crapperclick +=1
+  if Player.crap >= 10: {
+    Player.crapperclick +=1
+    Player.crapUpgrade += Player.crapUpgrade*10
+  }
 }
 function checkAcheivemnts() {
   if (Player.crap == 100 && Player.acheivement1 == false) {
     Player.acheivement1 = true;
     window.print("you got the acheivement 100 crap!");
   }
-}
+  
 setInterval(checkAcheivemnts, 100);
