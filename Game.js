@@ -17,7 +17,7 @@ var Player = {
   crap: 0,
   crapperclick: 1,
   crappersec: 0,
-  crapUpgrade: 10
+  crapUpgrade: 10,
   options: {
         newsHidden: false,
         notation: "Mixed scientific",
