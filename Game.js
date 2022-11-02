@@ -31,7 +31,7 @@ function updateCrap() {
   document.getElementById("CrapAmount").textContent=(String(Player.crap+=Player.crapperclick));
 }   
 function upgradeClicker() {
-  if Player.crap >= 10: {
+  if (Player.crap >= 10) {
     Player.crapperclick +=1
     Player.crapUpgrade += Player.crapUpgrade*10
   }
@@ -41,5 +41,5 @@ function checkAcheivemnts() {
     Player.acheivement1 = true;
     window.print("you got the acheivement 100 crap!");
   }
-  
+} 
 
