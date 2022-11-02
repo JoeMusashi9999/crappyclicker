@@ -35,8 +35,8 @@ function updateCrap() {
 // function whenever the player clicks the "upgrade clicker" button
 function upgradeClicker() {
   if (Player.crap >= costOfUpgrade) {
-    Player.crapperclick += 1
-    Player.costOfUpgrade += Player.costOfUpgrade*4
+    Player.crapperclick += 1;
+    Player.costOfUpgrade += Player.costOfUpgrade*4;
   } else: {
     //change latter to a spill screen on top of the resr of the page.
     alert("You do not have " + costOfUpgrade+ " crap!");
