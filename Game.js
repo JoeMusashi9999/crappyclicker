@@ -18,6 +18,7 @@ var Player = {
   crapperclick: 1,
   crappersec: 0,
   crapUpgrade: 10,
+  costOfUpgrade: 10,
   options: {
         newsHidden: false,
         notation: "Mixed scientific",
@@ -26,16 +27,21 @@ var Player = {
 
 
 
-//update crap not working
+// function whenever the player clicks the "get crap" button
 function updateCrap() {
   document.getElementById("CrapAmount").textContent=(String(Player.crap+=Player.crapperclick));
 }   
+
+// function whenever the player clicks the "upgrade clicker" button
 function upgradeClicker() {
-  if (Player.crap >= 10) {
-    Player.crapperclick +=1
-    Player.crapUpgrade += Player.crapUpgrade*10
-  }
+  if (Player.crap >= costOfUpgrade) {
+    Player.crapperclick += 1
+    Player.costOfUpgrade += Player.costOfUpgrade*4
+  } else: {
+    //change latter to a spill screen on top of the resr of the page.
+    alert("You do not have " + costOfUpgrade+ " crap!");
 }
+  
 function checkAcheivemnts() {
   if (Player.crap == 100 && Player.acheivement1 == false) {
     Player.acheivement1 = true;
