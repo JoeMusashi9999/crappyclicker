@@ -45,7 +45,7 @@ function upgradeClicker() {
 function checkAcheivemnts() {
   if (Player.crap == 100 && Player.acheivement1 == false) {
     Player.acheivement1 = true;
-    window.print("you got the acheivement 100 crap!");
+    alert("you got the acheivement 100 crap!");
   }
 } 
 
