@@ -5,15 +5,15 @@
 
 var Player = {
   
-  acheivement1: false,
-  acheivement2: false,
-  acheivement3: false,
-  acheivement4: false,
-  acheivement5: false,
-  acheivement6: false,
-  acheivement7: false,
-  acheivement8: false,
-  acheivement9: false,
+  achievement1: false,
+  achievement2: false,
+  achievement3: false,
+  achievement4: false,
+  achievement5: false,
+  achievement6: false,
+  achievement7: false,
+  achievement8: false,
+  achievement9: false,
   crap: 0,
   crapperclick: 1,
   crappersec: 0,
@@ -30,6 +30,7 @@ var Player = {
 // function whenever the player clicks the "get crap" button
 function updateCrap() {
   document.getElementById("CrapAmount").textContent=(String(Player.crap+=Player.crapperclick));
+  checkAchievements()
 }   
 
 // function whenever the player clicks the "upgrade clicker" button
@@ -43,10 +44,10 @@ function upgradeClicker() {
   }
 }
   
-function checkAcheivemnts() {
-  if (Player.crap == 100 && Player.acheivement1 == false) {
-    Player.acheivement1 = true;
-    alert("you got the acheivement 100 crap!");
+function checkAchievements() {
+  if (Player.crap >= 100 && Player.achievement1 == false) {
+    Player.achievement1 = true;
+    alert("you got the achievement 100 crap!");
   }
 } 
 
