@@ -40,6 +40,7 @@ function upgradeClicker() {
   } else {
     //change latter to a spill screen on top of the resr of the page.
     alert("You do not have " + Player.costOfUpgrade+ " crap!");
+  }
 }
   
 function checkAcheivemnts() {
