@@ -37,6 +37,7 @@ function updateCrap() {
 function upgradeClicker() {
   if (Player.crap >= Player.costOfUpgrade) {
     Player.crapperclick += 1;
+    Player.crap -= Player.costOfUpgrade;
     Player.costOfUpgrade += Player.costOfUpgrade*4;
   } else {
     //change latter to a spill screen on top of the resr of the page.
